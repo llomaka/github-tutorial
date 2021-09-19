@@ -1,5 +1,7 @@
 body {
   color: red;
+  font-family: sans-serif;
+  font-size: 20px;
 }
 
 .my-class-1 a {
@@ -12,4 +14,16 @@ body {
 
 .my-class-3 a {
   color: unset;
+}
+
+table caption {
+  text-align: left;
+}
+table {
+  border-collapse: collapse;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #2a2a2a;
 }
