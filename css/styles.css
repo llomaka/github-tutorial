@@ -115,3 +115,55 @@ table td {
   background: rgba(255, 255, 255, 0.3);
   transform: skew(25deg);
 }
+
+.list-item {
+  width: 350px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+.list-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ccc;
+}
+
+.icon-antenna::before {
+  background-image: url('../images/symbol-defs.svg#icon-antenna');
+}
+
+.icon-clock::before {
+  background-image: url('../images/clock.svg');
+}
+
+.icon-astronaut::before {
+  background-image: url('../images/astronaut.svg');
+}
+
+.icon {
+  padding: 10px 0 10px 40px;
+  position: relative;
+}
+.icon:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  display: block;
+  background: transparent url('../images/symbol-defs.svg') center center
+    no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+}
+.icon-arrow:before {
+  display: inline;
+  background-image: url('../images/symbol-defs.svg#icon-antenna');
+}
